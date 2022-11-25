@@ -305,7 +305,7 @@ header{
     padding: 4px;
 }
 
-@media (max-width:950px){
+@media (max-width:1200px){
 .toggle{display: inline-block;}
 .toggle img{
     height: 30px;
