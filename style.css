@@ -327,7 +327,7 @@ header{
     height: 100vh;
 }
 .nav_list a{
-    color: antiquewhite;
+    color: rgb(247, 247, 247);
     font-size: 20px;
 }
 .nav ul li{
