@@ -22,202 +22,139 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0 3px 20px rgba(black, 0.2);
 }
-.nav ul{
-    display: flex;
-    list-style-type: none;
-}
-.nav{
-    color: black;
-}
-.nav_list{
-    padding: 10px;
-}
-.nav_list a{
-    color: black;
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
-}
-.nav_list a:hover {
-     color: aqua;
-}
+
 
 .nav-scroll{
     color: rgb(2, 2, 2);
     background-color: rgb(229, 233, 237);
     
 }
+
+.nav ul{
+    display: block;
+    position: absolute;
+    left: -100%;
+    top: 80px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    height: 100vh;
+}
+.nav_list a{
+    color: rgb(247, 247, 247);
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav ul li{
+    margin: 30px 0;
+}
+#click:checked ~ ul{
+    left: 0;
+}
+.bar{
+    display: block;
+    height: 35px;
+}
+
 #click{
     display: none;
 }
-.bar{
-    height: 35px;
-    cursor: pointer;
-    display: none;
-}
 
-.toggle{display: none;}
+.toggle{display: inline-block;}
+.toggle img{
+    height: 30px;
+    padding-left: 7px;
+    transition: all 0.5s;
+}
+.toggle img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(.40em .40em .4em black);
+}
 .first_line{
-    display: flex;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 120px;
-    height: fit-content;
-    flex-wrap: wrap;
+    display: grid;
+    margin: 20px;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
 }
 .car_main{
-    background-image: url(image/car1.jpg);
-    background-size: 100%;
-    width: 700px;
-    height: 370px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
-    box-shadow: .30em .30em 1em;
-    display: flex;
+    max-width: 900px;
+
 }
 .car{
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9));
-    padding: 50px 280px 70px 280px;
-    transition: transform 800ms ease;
-    opacity: 0;
-}
-.car:hover{
-    transform: scale(1.05);
-    opacity: 1;
-}
-.nat{
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9));
-    padding: 100px 230px 100px 230px;
-    transition: transform 800ms ease;
-    opacity: 0;
-}
-.nat:hover{
-    transform: scale(1.05);
-    opacity: 1;
+    width: 100%;
+    padding-top: 50%;
+    background: url(image/car1.jpg) center no-repeat;
+    background-size: contain;
 }
 .nature{
-    background-image: url(image/art1.jpg);
-    width: 600px;
-    height: 450px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 30px;
-    box-shadow: .30em .30em 1em;
+    max-width: 900px;
+
 }
-.art_main{
-    box-shadow: .30em .30em 1em;
-    height: fit-content;
-    background-image: url(image/art2.jpg);
-    background-size: 100%;
-    width: 600px;
-    height: 400px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.art{
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9));
-    padding: 75px 240px 75px 220px;
-    transition: transform 800ms ease;
-    opacity: 0;
-}
-.art:hover{
-    transform: scale(1.05);
-    opacity: 1;
-}
-.animal{
-    margin-top: 10px;
-    margin-left: 30px;
-    box-shadow: .30em .30em 1em;
-    height: fit-content;
-    background-image: url(image/ani2.jpg);
-    width: 700px;
-    height: 365px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.ani{
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9));
-    padding: 50px 280px 70px 280px;
-    transition: transform 800ms ease;
-    opacity: 0;
-}
-.ani:hover{
-    transform: scale(1.05);
-    opacity: 1;
+.nat{
+    width: 100%;
+    padding-top: 50%;
+    background: url(image/nat1.jpg) center no-repeat;
+    background-size: contain;
 }
 .fashion{
-    margin-top: 10px;
-    box-shadow: .30em .30em 1em;
-    height: fit-content;
-    background-image: url(image/fash1.jpg);
-    width: 1330px;
-    height: 370px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 900px;
+
 }
 .fash{
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9));
-    padding: 53px 590px 70px 590px;
-    transition: transform 800ms ease;
-    opacity: 0;
+    width: 100%;
+    padding-top: 50%;
+    background: url(image/fash1.jpg) center no-repeat;
+    background-size: contain;
 }
-.fash:hover{
-    transform: scale(1.05);
-    opacity: 1;
+.animals{
+    max-width: 880px;
+
 }
-.lifestyle{
-    margin-top: 10px;
-    box-shadow: .30em .30em 1em;
-    height: fit-content;
-    background-image: url(image/lif3.jpg);
-    width: 1330px;
-    height: 370px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.ani{
+    width: 100%;
+    padding-top: 50%;
+    background: url(image/ani7.jpg) center no-repeat;
+    background-size: contain;
 }
-.life{
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9));
-    padding: 53px 590px 70px 590px;
-    transition: transform 800ms ease;
-    opacity: 0;
+.life_style{
+    max-width: 900px;
+
 }
-.life:hover{
-    transform: scale(1.05);
-    opacity: 1;
+.ls{
+    width: 100%;
+    padding-top: 50%;
+    background: url(image/ls6.jpg) center no-repeat;
+    background-size: contain;
+}
+.art_main{
+    max-width: 900px;
+
+}
+.art{
+    width: 100%;
+    padding-top: 50%;
+    background: url(image/art4.jpg) center no-repeat;
+    background-size: contain;
+}
+.first_line h1{
+    color: beige;
+    padding-left: 20px;
+    padding-bottom: 15px;
 }
 .first_line a{
     text-decoration: none;
-    color: rgb(243, 240, 237);
-    font-size: 100px;
 }
+
 .second_line{
-       padding: 50px;
+       padding-top: 20px;
+       padding-bottom: 15px;
        display: grid;
        grid-template-columns: auto auto auto auto;
-       gap: 2em;
+       gap: 3em;
 }
 .second_line img{
-    height: 550px;
+    height: 300px;
 }
 .from-left{
     grid-column: 2 / 3;
@@ -247,6 +184,7 @@ header{
     padding-bottom: 40px;
     color: rgb(234, 237, 239);
     font-family: Arial, Helvetica, sans-serif;
+    gap: 3em;
 }
 .icon{
     display: inline-block;
@@ -262,13 +200,15 @@ header{
 }
 .widgit{
     display: grid;
-    
+}
+.logo{
+    font-size: 10px;
 }
 .wid{
     text-decoration: none;
     color: rgb(234, 237, 239);
     padding: 7px;
-    font-size: 20px;
+    font-size: 10px;
 }
 .search_bar{
     width: 100%;
@@ -303,40 +243,4 @@ header{
     background: rgb(50, 50, 50);
     border: 0;
     padding: 4px;
-}
-
-@media (max-width:1180px){
-.toggle{display: inline-block;}
-.toggle img{
-    height: 30px;
-    padding-left: 7px;
-    transition: all 0.5s;
-}
-.toggle img:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(.40em .40em .4em black);
-}
-.nav ul{
-    display: block;
-    position: fixed;
-    left: -100%;
-    top: 80px;
-    width: 100%;
-    text-align: center;
-    background-color: black;
-    height: 100vh;
-}
-.nav_list a{
-    color: rgb(247, 247, 247);
-    font-size: 20px;
-}
-.nav ul li{
-    margin: 30px 0;
-}
-#click:checked ~ ul{
-    left: 0;
-}
-.bar{
-    display: block;
-}
 }
