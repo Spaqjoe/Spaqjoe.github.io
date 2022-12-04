@@ -152,7 +152,7 @@ body{
        gap: 3em;
 }
 .second_line img{
-    height: 410px;
+    height: 550px;
 }
 .from-left{
     grid-column: 2 / 3;
