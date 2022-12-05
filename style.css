@@ -243,7 +243,7 @@ body{
     padding: 4px;
 }
 
-@media all and (min-width: 740px) {
+@media (orientation: landscape) and (min-width: 740px) {
     .nav-scroll{
         height: 50px;
         background-color: rgb(28, 28, 28);
