@@ -1,3 +1,21 @@
+const main = document.querySelector(".main_list");
+const hamburger = document.querySelector(".hamburger");
+const closeMenu = document.querySelector(".close");
+
+hamburger.addEventListener("click", show);
+closeMenu.addEventListener("click", close);
+
+function show(){
+    main.style.display = "flex";
+    main.style.top = "0";
+};
+
+function close(){
+    main.style.top = "-100%";
+};
+
+
+
 const sliders = document.querySelectorAll(".slide-in");
 
 const appearOptions = {
