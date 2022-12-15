@@ -34,7 +34,6 @@ body{
     display: none;
     flex-direction: column;
     align-items: center;
-    box-shadow: 5px 5px 20px rgba(21, 21, 21, 0.933) inset;
 }
 
 .nav_list a{
@@ -80,10 +79,6 @@ body{
     height: 60px;
     padding-left: 7px;
     transition: all 0.5s;
-}
-.toggle img:hover {
-    transform: scale(1.1);
-    
 }
 .first_line{
     display: grid;
@@ -265,11 +260,11 @@ body{
         background-color: rgb(28, 28, 28);
         display: flex;
         justify-content: space-between;
-        min-height: 8vh;
+        min-height: 10vh;
     }
     .first_line{
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 120px;
+        margin-top: 30px;
     }
     .toggle{  
         display: none;
@@ -281,9 +276,11 @@ body{
         display: flex;
         list-style: none;
         background: none;
+        box-shadow: none;
         justify-content: space-around;
         flex-flow: row;
-        top: 0;
+        padding: 0;
+        position: relative;
     }
     .nav_list{
         border: 0;
