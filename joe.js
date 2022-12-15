@@ -11,7 +11,7 @@ function show(){
 };
 
 function close(){
-    main.style.top = "-100%";
+    main.style.top = "-150%";
 };
 
 
