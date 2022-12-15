@@ -23,7 +23,7 @@ body{
     height: 100vh;
     width: 50%;
     background-color: rgb(28, 28, 28);
-    transition: top 1s ease;
+    transition: left 1.5s ease-in-out;
     padding: 50px;
     flex-direction: column;
     top: 0;
