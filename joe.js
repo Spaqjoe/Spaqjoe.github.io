@@ -7,11 +7,11 @@ closeMenu.addEventListener("click", close);
 
 function show(){
     main.style.display = "flex";
-    main.style.top = "0";
+    main.style.transform = "translateX(0)";
 };
 
 function close(){
-    main.style.top = "-250%";
+    main.style.transform = "translateX(-600px)";
 };
 
 
