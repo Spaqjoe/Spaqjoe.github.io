@@ -8,6 +8,9 @@ body{
     background-color: rgb(229, 233, 237);
     overflow-x: hidden;
 }
+.main_logo{
+    margin-left: 30px;
+}
 
 .nav-scroll{
     display: flex;
@@ -21,17 +24,17 @@ body{
 
 .main_list{
     height: 100vh;
-    width: 50%;
-    background-color: rgb(28, 28, 28);
-    transition: left 1.5s ease-in-out;
+    width: 60%;
+    background-color: rgba(28, 28, 28, 0.736);
+    transition: top 1s ease-in-out;
     padding: 50px;
-    flex-direction: column;
     top: 0;
     right: 0;
-    left: 0;
-    z-index: 10;
+    position: absolute;
     display: none;
-    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 20px rgba(21, 21, 21, 0.933) inset;
 }
 
 .nav_list a{
@@ -39,20 +42,20 @@ body{
     font-size: 30px;
     text-decoration: none;
 }
-.main_list li:last-child{
-    border-bottom: none;
-}
+
 .nav_list{
     list-style-type: none;
     border-bottom: 1px solid whitesmoke;
     text-align: center;
-    padding: 50px 0;
-
+    padding: 80px 0;
+}
+.nav_list:last-child{
+    border-bottom: none;
 }
 .close{
     position: absolute;
     display: block;
-    top: 20px;
+    top: 35px;
     right: 20px;
 }
 .close img{
@@ -61,21 +64,18 @@ body{
 
 .hamburger{
     display: block;
+    border: 0;
 }
 .hamburger img{
     height: 70px;
-}
-.bar{
-    display: block;
-    width: 100%;
-    height: 6px; 
-    transition: all 0.3s ease-in-out;
-    background-color: rgb(4, 4, 4);
-    margin: 6px 0px;
+    margin-right: 10px;
 }
 
-
-.toggle{display: inline-block;}
+.toggle{
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 20px;
+}
 .toggle img{
     height: 60px;
     padding-left: 7px;
@@ -83,7 +83,7 @@ body{
 }
 .toggle img:hover {
     transform: scale(1.1);
-    filter: drop-shadow(.40em .40em .4em black);
+    
 }
 .first_line{
     display: grid;
@@ -264,7 +264,8 @@ body{
         height: 50px;
         background-color: rgb(28, 28, 28);
         display: flex;
-        justify-content: space-between ;
+        justify-content: space-between;
+        min-height: 8vh;
     }
     .first_line{
         grid-template-columns: repeat(2, 1fr);
@@ -278,13 +279,17 @@ body{
     }
     .main_list{
         display: flex;
-        gap: 80px;
-        align-items: center; 
+        list-style: none;
+        background: none;
+        justify-content: space-around;
+        flex-flow: row;
         top: 0;
-        left: 0;
-        justify-content: center;
+    }
+    .nav_list{
+        border: 0;
     }
     .nav_list a{
+        display: inline-block;
         color: rgb(247, 247, 247);
         font-size: 20px;
         text-decoration: none;
@@ -298,9 +303,15 @@ body{
     .wid{
         font-size: 18px;
     }
-    .hamburger{
+    .hamburger img{
+        display: none;
+    }
+    .close{
         display: none;
     }
 
+
 }
+
+
 
